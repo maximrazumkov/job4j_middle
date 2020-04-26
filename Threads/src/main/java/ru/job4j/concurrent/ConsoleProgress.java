@@ -5,7 +5,7 @@ public class ConsoleProgress implements Runnable {
         Thread progress = new Thread(new ConsoleProgress());
         progress.start();
         System.out.println(progress.getState());
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         progress.interrupt();
         System.out.println(progress.getState());
     }
@@ -14,16 +14,17 @@ public class ConsoleProgress implements Runnable {
     public void run() {
        while (!Thread.currentThread().isInterrupted()) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(500);
                 System.out.print("\r load: " + '-');
-                Thread.sleep(100);
+                Thread.sleep(500);
                 System.out.print("\r load: " + '\\');
-                Thread.sleep(100);
+                Thread.sleep(500);
                 System.out.print("\r load: " + '|');
-                Thread.sleep(100);
+                Thread.sleep(500);
                 System.out.print("\r load: " + '/');
             } catch (Exception e) {
                 e.printStackTrace();
+                break;
             }
         }
     }
