@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="4. Скачивание файла с ограничением.[#279446]">
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/Cache.java" afterDir="false" />
+    <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ConsoleProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ConsoleProgress.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587911886299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. Синхронизация общих ресурсов.[#279457]">
+      <created>1587912901826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587912901826</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Visibility. Общий ресурс вне критической секции[#279461]">
+      <created>1587913717809</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587913717809</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,7 +188,9 @@
     <MESSAGE value="1.2. Режим ожидания.[#279448]" />
     <MESSAGE value="3. Прерывание нити[#279451]" />
     <MESSAGE value="4. Скачивание файла с ограничением.[#279446]" />
-    <option name="LAST_COMMIT_MESSAGE" value="4. Скачивание файла с ограничением.[#279446]" />
+    <MESSAGE value="1. Синхронизация общих ресурсов.[#279457]" />
+    <MESSAGE value="Visibility. Общий ресурс вне критической секции[#279461]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visibility. Общий ресурс вне критической секции[#279461]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1587899789482">
@@ -191,10 +205,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587908454197" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587912296178">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587913716354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587912296178" />
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587913716354" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587900113318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -231,10 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587911933858" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587911960266">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587913723812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587911960266" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587913723812" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587899549207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
