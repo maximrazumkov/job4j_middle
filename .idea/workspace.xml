@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ConsoleProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/FileDownload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,9 +44,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42375" />
   </component>
-  <component name="RunManager" selected="Application.ConsoleProgress">
-    <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
+  <component name="RunManager" selected="Application.FileDownload">
+    <configuration name="ConsoleProgress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConsoleProgress" />
       <module name="Threads" />
       <extension name="coverage">
         <pattern>
@@ -58,9 +58,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleProgress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConsoleProgress" />
+    <configuration name="FileDownload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.FileDownload" />
       <module name="Threads" />
+      <option name="PROGRAM_PARAMETERS" value="https://raw.githubusercontent.com/peterarsentev/course_test/master/pom.xml 200" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.job4j.concurrent.*" />
@@ -110,13 +111,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ConsoleProgress" />
+      <item itemvalue="Application.FileDownload" />
+      <item itemvalue="Application.ThreadState" />
+      <item itemvalue="Application.ThreadStop" />
+      <item itemvalue="Application.Wget" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileDownload" />
         <item itemvalue="Application.ConsoleProgress" />
         <item itemvalue="Application.ThreadStop" />
         <item itemvalue="Application.Wget" />
         <item itemvalue="Application.ThreadState" />
-        <item itemvalue="Application.ConcurrentOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -145,67 +153,79 @@
       <option name="project" value="LOCAL" />
       <updated>1587907868103</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3. Прерывание нити[#279451]">
+      <created>1587910462055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587910462055</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.1. Состояние нити.[#279447]" />
     <MESSAGE value="1.2. Режим ожидания.[#279448]" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.2. Режим ожидания.[#279448]" />
+    <MESSAGE value="3. Прерывание нити[#279451]" />
+    <option name="LAST_COMMIT_MESSAGE" value="3. Прерывание нити[#279451]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1587899789482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587899789482" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587911680292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587911680292" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1587908454197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587908454197" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587907866290">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587910460919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587907866290" />
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587910460919" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587900113318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587900113318" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587910422056">
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1587911753341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587910422056" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587910422056">
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753341" />
+    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1587911753341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587910422056" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587910422056">
+    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753341" />
+    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1587911753341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587910422056" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587910422056">
+    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753341" />
+    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1587911753341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587910422056" />
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1587910172183">
+    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753341" />
+    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1587911753983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587910172183" />
-    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1587910172183">
+    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753983" />
+    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1587911753983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587910172183" />
-    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1587910172183">
+    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753983" />
+    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1587911753983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587910172183" />
-    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1587910172183">
+    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753983" />
+    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1587911753983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587910172183" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587907871980">
+    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587911753983" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587910561891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587907871980" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587910561891" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587899549207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -227,6 +247,16 @@
           <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ConsoleProgress.java</url>
           <line>14</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/FileDownload.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/FileDownload.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
