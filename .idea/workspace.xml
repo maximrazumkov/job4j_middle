@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ThreadState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ThreadSleep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/Wget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +45,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42375" />
   </component>
-  <component name="RunManager" selected="Application.ThreadState">
+  <component name="RunManager" selected="Application.Wget">
     <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
       <module name="Threads" />
@@ -71,8 +72,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Wget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.Wget" />
+      <module name="Threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wget" />
         <item itemvalue="Application.ThreadState" />
         <item itemvalue="Application.ConcurrentOutput" />
       </list>
@@ -89,33 +104,53 @@
       <option name="presentableId" value="Default" />
       <updated>1587899536788</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.1. Состояние нити.[#279447]">
+      <created>1587907147427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587907147427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.1. Состояние нити.[#279447]" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1. Состояние нити.[#279447]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1587899789482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587899789482" />
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587907145941">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587907145941" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587900113318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587900113318" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587907115579">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587907848501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587907115579" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587907115579">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587907848501" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587907848501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587907115579" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587907115579">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587907848501" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587907848501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587907115579" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587907115579">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587907848501" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587907848501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587907115579" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587907848501" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587907171433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587907171433" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587899549207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
