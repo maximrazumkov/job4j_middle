@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/CountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Threads/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Threads/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,12 +42,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j_junior" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42375" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Application.ConsoleProgress">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.job4j.concurrent" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CountTest.whenExecute2ThreadThen2">
     <configuration name="ConsoleProgress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConsoleProgress" />
       <module name="Threads" />
@@ -97,8 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Wget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.Wget" />
+    <configuration name="CountTest.whenExecute2ThreadThen2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Threads" />
       <extension name="coverage">
         <pattern>
@@ -106,6 +120,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.concurrent" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.CountTest" />
+      <option name="METHOD_NAME" value="whenExecute2ThreadThen2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,16 +132,16 @@
       <item itemvalue="Application.ConsoleProgress" />
       <item itemvalue="Application.FileDownload" />
       <item itemvalue="Application.ThreadStop" />
-      <item itemvalue="Application.Wget" />
       <item itemvalue="Application.ThreadSleep" />
+      <item itemvalue="JUnit.CountTest.whenExecute2ThreadThen2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountTest.whenExecute2ThreadThen2" />
         <item itemvalue="Application.ConsoleProgress" />
         <item itemvalue="Application.ThreadSleep" />
         <item itemvalue="Application.FileDownload" />
         <item itemvalue="Application.ThreadStop" />
-        <item itemvalue="Application.Wget" />
       </list>
     </recent_temporary>
   </component>
@@ -209,26 +227,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587913716354" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587900113318">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587915137224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587900113318" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587912277320">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587915137224" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587915703596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587912277320" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587912277320">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587915703596" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587915703596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587912277320" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587912277320">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587915703596" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587915703596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587912277320" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587912277320">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587915703596" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587915703596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587912277320" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587915703596" />
     <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1587911933858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -245,6 +263,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587911933858" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1587915630046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587915630046" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587913723812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,6 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587899549207" />
+    <state x="731" y="223" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587915127736">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="223" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587915127736" />
     <state x="342" y="215" key="new project wizard" timestamp="1587899612489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
