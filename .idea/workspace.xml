@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ParallelSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/SimpleBlockingQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/SimpleBlockingQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/SimpleBlockingQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/SimpleBlockingQueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <recent name="ru.job4j.concurrent" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ParallelSearch">
+  <component name="RunManager" selected="JUnit.SimpleBlockingQueueTest.whenFetchAllThenGetIt">
     <configuration name="ParallelSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ParallelSearch" />
       <module name="Threads" />
@@ -106,6 +107,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleBlockingQueueTest.whenFetchAllThenGetIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.concurrent" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.SimpleBlockingQueueTest" />
+      <option name="METHOD_NAME" value="whenFetchAllThenGetIt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserStorege" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Threads" />
       <extension name="coverage">
@@ -121,36 +138,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserStorege.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Threads" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.job4j.concurrent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.job4j.concurrent" />
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.UserStorege" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.UserStorege.testAdd" />
+      <item itemvalue="Application.ParallelSearch" />
       <item itemvalue="JUnit.UserStorege" />
       <item itemvalue="JUnit.SimpleBlockingQueueTest.peekAndPoll" />
       <item itemvalue="JUnit.SimpleBlockingQueueTest" />
-      <item itemvalue="Application.ParallelSearch" />
+      <item itemvalue="JUnit.SimpleBlockingQueueTest.whenFetchAllThenGetIt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimpleBlockingQueueTest.whenFetchAllThenGetIt" />
         <item itemvalue="Application.ParallelSearch" />
         <item itemvalue="JUnit.SimpleBlockingQueueTest" />
         <item itemvalue="JUnit.SimpleBlockingQueueTest.peekAndPoll" />
         <item itemvalue="JUnit.UserStorege" />
-        <item itemvalue="JUnit.UserStorege.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587981841175</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2. Обеспечить остановку потребителя.[#279441]">
+      <created>1587983181463</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587983181463</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -257,7 +265,8 @@
     <MESSAGE value="4. ThreadSafe динамический список [#279463]" />
     <MESSAGE value="0. Управление нитью через wait.[#279444]" />
     <MESSAGE value="1. Реализовать шаблон Producer Consumer.[#279443]" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Реализовать шаблон Producer Consumer.[#279443]" />
+    <MESSAGE value="2. Обеспечить остановку потребителя.[#279441]" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. Обеспечить остановку потребителя.[#279441]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1587899789482">
@@ -272,58 +281,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587918204953" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587981839562">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587983180365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587981839562" />
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587983180365" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587919596104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587919596104" />
-    <state width="1877" height="225" key="GridCell.Tab.0.bottom" timestamp="1587983142967">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587983307017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587983142967" />
-    <state width="1877" height="225" key="GridCell.Tab.0.center" timestamp="1587983142967">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307017" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587983307017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587983142967" />
-    <state width="1877" height="225" key="GridCell.Tab.0.left" timestamp="1587983142967">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307017" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587983307017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587983142967" />
-    <state width="1877" height="225" key="GridCell.Tab.0.right" timestamp="1587983142967">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307017" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587983307017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587983142967" />
-    <state width="1877" height="225" key="GridCell.Tab.1.bottom" timestamp="1587983139177">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307017" />
+    <state width="1877" height="225" key="GridCell.Tab.1.bottom" timestamp="1587983307012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587983139177" />
-    <state width="1877" height="225" key="GridCell.Tab.1.center" timestamp="1587983139177">
+    <state width="1877" height="225" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307012" />
+    <state width="1877" height="225" key="GridCell.Tab.1.center" timestamp="1587983307012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587983139177" />
-    <state width="1877" height="225" key="GridCell.Tab.1.left" timestamp="1587983139177">
+    <state width="1877" height="225" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307012" />
+    <state width="1877" height="225" key="GridCell.Tab.1.left" timestamp="1587983307012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587983139177" />
-    <state width="1877" height="225" key="GridCell.Tab.1.right" timestamp="1587983139177">
+    <state width="1877" height="225" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307012" />
+    <state width="1877" height="225" key="GridCell.Tab.1.right" timestamp="1587983307012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="225" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587983139177" />
+    <state width="1877" height="225" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587983307012" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1587915630046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587915630046" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587981847192">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587983187145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587981847192" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587899549207">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587983187145" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587986344168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587899549207" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587986344168" />
     <state x="731" y="223" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587916916718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -357,9 +366,9 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/SimpleBlockingQueue.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ParallelSearch.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
