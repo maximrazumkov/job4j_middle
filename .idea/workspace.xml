@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/Barrier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/CountBarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/SimpleBlockingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/SimpleBlockingQueueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,20 +62,7 @@
       <recent name="ru.job4j.concurrent" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserStorege">
-    <configuration name="ConsoleProgress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConsoleProgress" />
-      <module name="Threads" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.job4j.concurrent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SimpleBlockingQueueTest.peekAndPoll">
     <configuration name="CountTest.whenExecute2ThreadThen2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Threads" />
       <extension name="coverage">
@@ -88,6 +74,22 @@
       <option name="PACKAGE_NAME" value="ru.job4j.concurrent" />
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.CountTest" />
       <option name="METHOD_NAME" value="whenExecute2ThreadThen2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleBlockingQueueTest.peekAndPoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.concurrent" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.SimpleBlockingQueueTest" />
+      <option name="METHOD_NAME" value="peekAndPoll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,19 +142,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConsoleProgress" />
       <item itemvalue="JUnit.CountTest.whenExecute2ThreadThen2" />
       <item itemvalue="JUnit.UserStorageTest" />
       <item itemvalue="JUnit.UserStorege.testAdd" />
       <item itemvalue="JUnit.UserStorege" />
+      <item itemvalue="JUnit.SimpleBlockingQueueTest.peekAndPoll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimpleBlockingQueueTest.peekAndPoll" />
         <item itemvalue="JUnit.UserStorege" />
         <item itemvalue="JUnit.UserStorege.testAdd" />
         <item itemvalue="JUnit.UserStorageTest" />
         <item itemvalue="JUnit.CountTest.whenExecute2ThreadThen2" />
-        <item itemvalue="Application.ConsoleProgress" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587919335416</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0. Управление нитью через wait.[#279444]">
+      <created>1587979065093</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587979065093</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -243,7 +252,8 @@
     <MESSAGE value="2. JCIP. Настройка библиотеки[#279460]" />
     <MESSAGE value="3. Класс хранилища пользователей UserStorage[#279462]" />
     <MESSAGE value="4. ThreadSafe динамический список [#279463]" />
-    <option name="LAST_COMMIT_MESSAGE" value="4. ThreadSafe динамический список [#279463]" />
+    <MESSAGE value="0. Управление нитью через wait.[#279444]" />
+    <option name="LAST_COMMIT_MESSAGE" value="0. Управление нитью через wait.[#279444]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1587899789482">
@@ -258,54 +268,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587918204953" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587919333881">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587979063379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587919333881" />
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587979063379" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587919596104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587919596104" />
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1587925404870">
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1587981769343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404870" />
-    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1587925404869">
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587981769343" />
+    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1587981769343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404869" />
-    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1587925404869">
+    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587981769343" />
+    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1587981769342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404869" />
-    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1587925404869">
+    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587981769342" />
+    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1587981769343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404869" />
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1587925404870">
+    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587981769343" />
+    <state width="1877" height="276" key="GridCell.Tab.1.bottom" timestamp="1587981765141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404870" />
-    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1587925404870">
+    <state width="1877" height="276" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587981765141" />
+    <state width="1877" height="276" key="GridCell.Tab.1.center" timestamp="1587981765141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404870" />
-    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1587925404870">
+    <state width="1877" height="276" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587981765141" />
+    <state width="1877" height="276" key="GridCell.Tab.1.left" timestamp="1587981765141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404870" />
-    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1587925404870">
+    <state width="1877" height="276" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587981765141" />
+    <state width="1877" height="276" key="GridCell.Tab.1.right" timestamp="1587981765141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587925404870" />
+    <state width="1877" height="276" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587981765141" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1587915630046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587915630046" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587919340346">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587979067636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587919340346" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587979067636" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587899549207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -341,6 +351,24 @@
           <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/FileDownload.java</url>
           <line>9</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/SimpleBlockingQueue.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/SimpleBlockingQueueTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/SimpleBlockingQueueTest.java</url>
+          <line>46</line>
+          <properties class="ru.job4j.concurrent.SimpleBlockingQueueTest" method="peekAndPoll">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
