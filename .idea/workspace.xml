@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51071b97-6f59-4b55-a2e1-b8ed1f3fecca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/cache/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/cache/OptimisticException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Threads/src/test/java/ru/job4j/concurrent/CatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Threads/src/main/java/ru/job4j/concurrent/ThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587994301038</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1. Неблокирующий кеш[#279468]">
+      <created>1588069482551</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588069482551</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -281,7 +286,8 @@
     <MESSAGE value="2. Обеспечить остановку потребителя.[#279441]" />
     <MESSAGE value="3. Junit тест для блокирующей очереди.[#279442]" />
     <MESSAGE value="0. CAS - операции[#279469]" />
-    <option name="LAST_COMMIT_MESSAGE" value="0. CAS - операции[#279469]" />
+    <MESSAGE value="1. Неблокирующий кеш[#279468]" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Неблокирующий кеш[#279468]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1587899789482">
@@ -296,10 +302,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588067502634" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587994299286">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1588069480509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587994299286" />
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588069480509" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587919596104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -340,10 +346,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587915630046" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587994309151">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588069485562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587994309151" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588069485562" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588067141240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
