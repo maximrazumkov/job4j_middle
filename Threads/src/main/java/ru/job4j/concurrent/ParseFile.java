@@ -3,6 +3,7 @@ package ru.job4j.concurrent;
 import java.io.*;
 
 public class ParseFile {
+
     private File file;
 
     public synchronized void setFile(File f) {
@@ -14,11 +15,11 @@ public class ParseFile {
     }
 
     public synchronized String getContent() throws IOException {
-        try (InputStream i = new FileInputStream(file)) {
+        try (BufferedReader bf = new BufferedReader(new FileReader(file))) {
             StringBuilder output = new StringBuilder();
-            int data;
-            while ((data = i.read()) > 0) {
-                output.append((char) data);
+            String line;
+            while ((line = bf.readLine()) != null) {
+                output.append(line);
             }
             return output.toString();
         } catch (Exception e) {
@@ -28,7 +29,7 @@ public class ParseFile {
     }
 
     public synchronized String getContentWithoutUnicode() throws IOException {
-        try (InputStream i = new FileInputStream(file)) {
+        try (BufferedReader i = new BufferedReader(new FileReader(file))) {
             StringBuilder output = new StringBuilder();
             int data;
             while ((data = i.read()) > 0) {
@@ -44,10 +45,8 @@ public class ParseFile {
     }
 
     public synchronized void saveContent(String content) throws IOException {
-        try (OutputStream o = new FileOutputStream(file)) {
-            for (int i = 0; i < content.length(); i += 1) {
-                o.write(content.charAt(i));
-            }
+        try (PrintWriter pr = new PrintWriter(new FileOutputStream(file))) {
+            pr.write(content);
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
