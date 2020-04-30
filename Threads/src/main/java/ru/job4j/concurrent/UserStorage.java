@@ -16,8 +16,8 @@ public class UserStorage {
 
     public synchronized boolean add(User user) {
         boolean result = false;
-        if (!users.containsKey(user.id)) {
-            users.put(user.id, user);
+        if (!users.containsKey(user.getId())) {
+            users.put(user.getId(), user);
             result = true;
         }
         return result;
@@ -25,8 +25,8 @@ public class UserStorage {
 
     public synchronized boolean update(User user) {
         boolean result = false;
-        if (users.containsKey(user.id)) {
-            users.put(user.id, user);
+        if (users.containsKey(user.getId())) {
+            users.put(user.getId(), user);
             result = true;
         }
         return result;
@@ -34,8 +34,8 @@ public class UserStorage {
 
     public synchronized boolean delete(User user) {
         boolean result = false;
-        if (users.containsKey(user.id)) {
-            users.remove(user.id, user);
+        if (users.containsKey(user.getId())) {
+            users.remove(user.getId(), user);
             result = true;
         }
         return result;
@@ -46,9 +46,11 @@ public class UserStorage {
         if (users.containsKey(fromId) && users.containsKey(toId)) {
             User fromUser = users.get(fromId);
             User toUser = users.get(fromId);
-            if (fromUser.amount >= amount) {
-                fromUser.amount -= amount;
-                toUser.amount += amount;
+            int amountFrom = fromUser.getAmount();
+            if (amountFrom >= amount) {
+                fromUser.setAmount(amountFrom - amount);
+                toUser.setAmount(toUser.getAmount() + amount);
+                result = true;
             }
         }
         return result;
