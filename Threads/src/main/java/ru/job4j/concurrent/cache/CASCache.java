@@ -9,12 +9,8 @@ public class CASCache {
         this.cache = cache;
     }
 
-    public boolean add(Base model) {
-        boolean result = false;
-        if (!cache.containsKey(model.getId())) {
-            cache.put(model.getId(), model);
-        }
-        return result;
+    public void add(Base model) {
+        cache.putIfAbsent(model.getId(), model);
     }
 
     public void update(Base model) {
