@@ -73,3 +73,5 @@ build
 .gradle
 *.pid'.idea' 
 '*.iml' 
+'.idea' 
+'*.iml' 
