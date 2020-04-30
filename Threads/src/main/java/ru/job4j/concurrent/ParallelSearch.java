@@ -3,7 +3,7 @@ package ru.job4j.concurrent;
 public class ParallelSearch {
 
     public static void main(String[] args) throws Exception {
-        SimpleBlockingQueue<Integer> queue = new SimpleBlockingQueue<Integer>();
+        SimpleBlockingQueue<Integer> queue = new SimpleBlockingQueue<>();
         final Thread consumer = new Thread(
                 () -> {
                     while (true) {
@@ -13,8 +13,8 @@ public class ParallelSearch {
                         try {
                             System.out.println(queue.poll());
                         } catch (Exception e) {
-                            e.printStackTrace();
                             Thread.currentThread().interrupt();
+                            throw e;
                         }
                     }
                 }
