@@ -19,6 +19,7 @@ public class SimpleBlockingQueue<T> {
                     this.wait();
                 } catch (Exception e) {
                     e.printStackTrace();
+                    throw new RuntimeException(e);
                 }
             }
             this.notify();
@@ -33,6 +34,7 @@ public class SimpleBlockingQueue<T> {
                     this.wait();
                 } catch (Exception e) {
                     e.printStackTrace();
+                    throw new RuntimeException(e);
                 }
             }
             this.notify();
