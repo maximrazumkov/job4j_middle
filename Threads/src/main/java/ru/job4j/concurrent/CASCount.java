@@ -1,15 +1,18 @@
 package ru.job4j.concurrent;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class CASCount {
-    private AtomicInteger count = new AtomicInteger();
+    private AtomicReference<Integer> count = new AtomicReference<>();
 
     public int getCount() {
-        return count.intValue();
+        return count.get();
     }
 
     public void increment() {
-        count.incrementAndGet();
+        Integer elem;
+        do {
+            elem = count.get();
+        } while (count.compareAndSet(elem, ++elem));
     }
 }

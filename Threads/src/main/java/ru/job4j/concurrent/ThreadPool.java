@@ -5,6 +5,54 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ThreadPool {
+
+    public static void main(String[] args) {
+        SimpleBlockingQueue<Runnable> tasks = new SimpleBlockingQueue<>();
+        ThreadPool threadPool = ThreadPool.newFixedThreadPool(3);
+        threadPool.work(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                for (int i = 0; i < 101; ++i) {
+                    try {
+                        Thread.sleep(100);
+                        System.out.print("\rLoading1 : " + i + "%");
+                    } catch (Exception e) {
+                        Thread.currentThread().interrupt();;
+                    }
+                }
+            }
+        });
+        threadPool.work(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                for (int i = 0; i < 101; ++i) {
+                    try {
+                        Thread.sleep(100);
+                        System.out.print("\rLoading2 : " + i + "%");
+                    } catch (Exception e) {
+                        Thread.currentThread().interrupt();;
+                    }
+                }
+            }
+        });
+        threadPool.work(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println();
+                for (int i = 0; i < 101; ++i) {
+                    try {
+                        Thread.sleep(100);
+                        System.out.print("\rLoading3 : " + i + "%");
+                    } catch (Exception e) {
+                        Thread.currentThread().interrupt();;
+                    }
+                }
+            }
+        });
+    }
+
     private final List<Thread> threads;
     private final SimpleBlockingQueue<Runnable> tasks;
 
