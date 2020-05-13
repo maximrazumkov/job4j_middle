@@ -3,16 +3,18 @@ package ru.job4j.concurrent;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class CASCount {
-    private AtomicReference<Integer> count = new AtomicReference<>();
+    private AtomicReference<Integer> count = new AtomicReference<>(0);
 
-    public int getCount() {
+    public Integer getCount() {
         return count.get();
     }
 
     public void increment() {
-        Integer elem;
+        Integer elemOld;
+        Integer elemNew;
         do {
-            elem = count.get();
-        } while (count.compareAndSet(elem, ++elem));
+            elemOld = count.get();
+            elemNew = elemOld + 1;
+        } while (!count.compareAndSet(elemOld, elemNew));
     }
 }
