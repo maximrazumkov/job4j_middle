@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="ru.job4j.hibernate.xml">
+    <class name="ru.job4j.hibernate.xml.Car" table="car">
+        <id name="id" type = "int" column="id">
+            <generator class="increment"/>
+        </id>
+
+        <many-to-one name="engine" class="ru.job4j.hibernate.xml.Engine" fetch="select" cascade="save-update">
+            <column name="engine_id" not-null="false" />
+        </many-to-one>
+
+        <set name="drivers" table="history_owner" cascade="save-update">
+            <key column="car_id"/>
+            <many-to-many column="driver_id" class="ru.job4j.hibernate.xml.Driver" />
+        </set>
+    </class>
+</hibernate-mapping>

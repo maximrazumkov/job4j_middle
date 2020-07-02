@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/job4j</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.connection.pool_size">10</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.id.new_generator_mappings">false</property>
+        <property name="default_entity_mode">dynamic-map</property>
+
+
+        <mapping class="ru.job4j.hibernate.annotation.Driver" />
+        <mapping class="ru.job4j.hibernate.annotation.Engine" />
+        <mapping class="ru.job4j.hibernate.annotation.Car" />
+
+
+        <mapping resource="Engine.hmb.xml"/>
+        <mapping resource="Car.hbm.xml"/>
+        <mapping resource="Driver.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
